@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="myStyleSheet.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!--Script below can probably be deleted-->
     <!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,14 +25,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://www.wikipedia.org"><img src="img/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="MyNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#aboutMe">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="MandzyukAlexResume.pdf">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
 
@@ -41,7 +40,12 @@
         </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <section id="home">
+        <div class="btn" style="height: 1000px">Hello <br><br><br><br><br></div>
+    </section>
+
+    <!---
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -55,12 +59,12 @@
                     <button id="testBtn" type="button" class="btn bt-default">Click Me</button>
                 </div>
             </div>
-            <!--End Active-->
+            
             <div class="item">
                 <img src="img/road.jpg">
             </div>
         </div>
-        <!--Start of starter controls-->
+        
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span></a>
@@ -68,9 +72,21 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span></a>
     </div>
-    <!---End of Image Slider-->
+    
+    -->
 
-    <footer id="footer" class="container-fluid text-center">
+    <div id="aboutMe" style="opacity: .5">
+        df
+        
+
+
+
+
+        about me
+    </div>
+
+    <!--
+        <footer id="footer" class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
                 <h3>Contant Me</h3>
@@ -88,12 +104,21 @@
             </div>
         </div>
     </footer>
+    -->
+    
     <script>
         $(function () {
 
-            $('#testBtn').on("click", function(){
+            $('#testBtn').on("click", function () {
                 $("footer").toggle("slide");
             });
+        });
+
+        $('ul.nav').find('a').click(function () {
+            var $href = $(this).attr('href');
+            var $anchor = $('#' + $href).offset();
+            $('body').animate({ scrollTop: $anchor.top });
+            return false;
         });
     </script>
 </body>

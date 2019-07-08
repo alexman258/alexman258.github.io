@@ -1,67 +1,72 @@
-.navbar{
-            margin-bottom: 0;
-            border-radius: 0;
-            background-color: #1f3440;
-            color: #ffffff; 
-            padding: 1% 0;
-            font-size: 1.2em;
-            border:0; 
-        }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #1f3440;
+    color: #ffffff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+}
 
-        .navbar-brand{
-            float: left;
-            min-height: 55px;
-            padding: 0 15px 5px;
-        }
 
-        .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
-            .navbar-inverse .navbar-nav .active a:hover{
-                color:#ffffff;
-                background-color: #1f3440;
-            }
-        
-        .navbar-inverse .navbar-nav{
-            color:#d5d5d5;
-        }
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    color: #ffffff;
+    background-color: #1f3440;
+}
 
-        .carousel-caption{
-            top: 50%;
-            transform: translateY(-50%);
-            text-transform: uppercase;
-        }
+.navbar-inverse .navbar-nav {
+    color: #d5d5d5;
+}
 
-        .btn {
-            font-size: 20px;
-            color:#FFF;
-            padding: 12px 22px;
-            background-color: #1f3440;
-            border: 2px solid #FFF;
-        }
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
 
-        .btn:hover{
-            color: black;
-            background-color: #43667B;
-        }
+.btn {
+    font-size: 20px;
+    color: #FFF;
+    padding: 12px 22px;
+    background-color: #1f3440;
+    border: 2px solid #FFF;
+}
 
-        .container-fluid{
-            background-color: #1f3440;
-            color: #FFF;
-        }
+.btn:hover {
+    color: black;
+    background-color: #43667B;
+}
 
-        .fa {
-            padding: 15px;
-            font-size: 25px;
-            color: #FFF;
-        }
-        .fa:hover {
-            color:#D5D5D5;
-            text-decoration: none;
-        }
+.container-fluid {
+    background-color: #1f3440;
+    color: #FFF;
+}
 
-        @media (max-width: 600px){
-            .carousel-caption{
-                display: none;
-            }
-        }
+.fa {
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+}
 
-        
+.fa:hover {
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+
+body {
+    background: url(img/mountain.jpg) no-repeat center center fixed;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 89px;
+}
